@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Salon Schmitt – Ihr Friseur in Hannover-Linden. Hochwertige Haarschnitte, Färbungen und Haarpflege. Jetzt Termin buchen!</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--p:#7C3AED;--pl:#8B5CF6;--pd:#6D28D9;--dk:#1F2937;--tx:#374151;--tl:#6B7280;--bg:#F9FAFB;--w:#FFF;--bd:#E5E7EB}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--tx);line-height:1.6;background:var(--w)}
+header{position:sticky;top:0;background:var(--w);border-bottom:1px solid var(--bd);z-index:100;padding:0 24px}
+.hi{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-size:1.25rem;font-weight:700;color:var(--dk);text-decoration:none}
+nav{display:flex;align-items:center;gap:24px}
+nav a{text-decoration:none;color:var(--tl);font-size:.9rem;font-weight:500;transition:color .2s}
+nav a:hover{color:var(--p)}
+.btn{display:inline-block;padding:10px 20px;border-radius:8px;font-weight:600;font-size:.9rem;text-decoration:none;transition:all .2s;cursor:pointer;border:none}
+.bp{background:var(--p);color:var(--w)}.bp:hover{background:var(--pd)}
+.bo{background:transparent;color:var(--p);border:2px solid var(--p)}.bo:hover{background:var(--p);color:var(--w)}
+.bph{background:var(--p);color:var(--w);font-size:.85rem;padding:8px 16px}
+.mt{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--dk)}
+.hero{background:linear-gradient(135deg,var(--p) 0%,var(--pd) 100%);color:var(--w);padding:80px 24px 100px;text-align:center}
+.hero-i{max-width:700px;margin:0 auto}
+.hero h1{font-size:2.5rem;font-weight:800;line-height:1.2;margin-bottom:16px}
+.hero p{font-size:1.15rem;opacity:.9;margin-bottom:32px;line-height:1.7}
+.hb{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero .bp{background:var(--w);color:var(--p);font-size:1rem;padding:14px 28px}.hero .bp:hover{background:#F3F4F6}
+.hero .bo{border-color:rgba(255,255,255,.5);color:var(--w)}.hero .bo:hover{background:rgba(255,255,255,.15);border-color:var(--w)}
+section{padding:80px 24px}
+.si-n{max-width:1100px;margin:0 auto}
+.st{font-size:1.75rem;font-weight:700;color:var(--dk);margin-bottom:12px}
+.ss{color:var(--tl);font-size:1.05rem;margin-bottom:48px}
+.sbg{background:var(--bg)}
+.ac{max-width:720px;font-size:1.05rem;line-height:1.8;color:var(--tx)}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.sc{background:var(--w);border:1px solid var(--bd);border-radius:12px;padding:28px;transition:box-shadow .2s}.sc:hover{box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.si{font-size:2rem;margin-bottom:12px}
+.sc h3{font-size:1.1rem;font-weight:600;color:var(--dk);margin-bottom:8px}
+.sc p{color:var(--tl);font-size:.95rem}
+.ro{text-align:center;margin-bottom:40px}
+.rn{font-size:3.5rem;font-weight:800;color:var(--dk);line-height:1}
+.rs-o{font-size:1.5rem;color:#FBBF24;margin:8px 0}
+.rcnt{color:var(--tl);font-size:.95rem}
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.rc{background:var(--w);border:1px solid var(--bd);border-radius:12px;padding:24px}
+.rs{color:#FBBF24;font-size:1.1rem;margin-bottom:12px}
+.rt{font-style:italic;color:var(--tx);margin-bottom:12px;font-size:.95rem;line-height:1.7}
+.ra{font-weight:600;color:var(--dk);font-size:.9rem}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.ci h3{font-size:1.1rem;font-weight:600;color:var(--dk);margin-bottom:16px}
+.cit{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;color:var(--tx);font-size:.95rem}
+.cit a{color:var(--p);text-decoration:none;font-weight:500}.cit a:hover{text-decoration:underline}
+.ht{width:100%;border-collapse:collapse;margin-top:8px}
+.ht td{padding:6px 0;font-size:.9rem;border-bottom:1px solid var(--bd)}
+.ht td:first-child{font-weight:500;width:40%}
+.cf{display:flex;flex-direction:column;gap:16px}
+.cf input,.cf textarea{width:100%;padding:12px 16px;border:1px solid var(--bd);border-radius:8px;font-size:.95rem;font-family:inherit;transition:border-color .2s}
+.cf input:focus,.cf textarea:focus{outline:none;border-color:var(--p)}
+.cf textarea{resize:vertical;min-height:120px}
+.cf .bp{align-self:flex-start;font-size:1rem;padding:12px 32px}
+.mc{margin-top:48px;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}
+.mc iframe{width:100%;height:300px;border:0}
+footer{background:var(--dk);color:rgba(255,255,255,.7);padding:40px 24px}
+.fi{max-width:1100px;margin:0 auto;text-align:center}
+.fl{display:flex;justify-content:center;gap:24px;margin-bottom:16px}
+.fl a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem}.fl a:hover{color:var(--w)}
+.fc{font-size:.85rem;margin-bottom:16px}
+.fr{font-size:.8rem;color:rgba(255,255,255,.4);border-top:1px solid rgba(255,255,255,.1);padding-top:16px;margin-top:16px}
+.fr a{color:rgba(255,255,255,.5);text-decoration:underline}
+@media(max-width:768px){.hero h1{font-size:1.75rem}.hero{padding:60px 24px 70px}nav a:not(.bph){display:none}.mt{display:block}.cg{grid-template-columns:1fr;gap:32px}.sg,.rg{grid-template-columns:1fr}section{padding:60px 24px}}
+@media(max-width:480px){.hero h1{font-size:1.5rem}.hb{flex-direction:column;align-items:center}.hero .btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<header><div class="hi">
+<a href="#" class="logo">Salon Schmitt</a>
+<nav>
+<a href="#about">Über uns</a>
+<a href="#services">Leistungen</a>
+<a href="#reviews">Bewertungen</a>
+<a href="#contact">Kontakt</a>
+<a href="tel:+495111234567" class="btn bph">📞 Jetzt anrufen</a>
+</nav>
+<button class="mt" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+</div></header>
+<section class="hero"><div class="hero-i">
+<h1>Salon Schmitt in Hannover</h1>
+<p>Professionelle Friseurdienstleistungen und Haargestaltung für jeden Geschmack und Stil.</p>
+<div class="hb">
+<a href="#contact" class="btn bp">Termin vereinbaren</a>
+<a href="#services" class="btn bo">Unsere Leistungen</a>
+</div>
+</div></section>
+<section id="about"><div class="si-n">
+<h2 class="st">Willkommen im Salon Schmitt</h2>
+<p class="ss"></p>
+<div class="ac">Der Salon Schmitt ist Ihr zuverlässiger Partner für hochwertige Friseurdienstleistungen in Hannover-Linden. Mit langjähriger Erfahrung und Leidenschaft für schöne Frisuren verwirklichen wir Ihre Haarziele. Unser freundliches Team steht Ihnen mit professioneller Beratung zur Seite.<br><br>Wir arbeiten mit hochwertigen Produkten und modernen Techniken, um beste Ergebnisse zu erzielen. Bei uns fühlen Sie sich in entspannter Atmosphäre willkommen und gut aufgehoben.</div>
+</div></section>
+<section id="services" class="sbg"><div class="si-n">
+<h2 class="st">Unsere Leistungen</h2>
+<p class="ss"></p>
+<div class="sg"><div class="sc"><div class="si">⭐</div><h3>Herrenfrisuren</h3><p>Klassische und moderne Herrenschnitte mit exakter Verarbeitung und stilvoller Umsetzung. Ob Kurzhaarschnitt oder trendige Styles – wir beraten Sie gerne.</p></div><div class="sc"><div class="si">⭐</div><h3>Damenfrisuren</h3><p>Elegante und kreative Schnitte speziell für Frauen jeden Alters und Haartyps. Vom Kurzhaarschnitt bis zu fließenden Längen – wir gestalten Ihren Traumlook.</p></div><div class="sc"><div class="si">⭐</div><h3>Haarfärben & Tönungen</h3><p>Professionelle Haarfärbung und Tönungen mit hochwertigen Produkten für strahlende Farben. Egal ob Haaraufhellung, Ton-in-Ton oder Farbveränderung – wir beraten kompetent.</p></div><div class="sc"><div class="si">⭐</div><h3>Haarpflege & Treatments</h3><p>Intensive Haarpflege und Kuren für gesundes, glänzendes Haar. Unsere Treatments regenerieren strapaziertes Haar und schenken neue Kraft und Vitalität.</p></div><div class="sc"><div class="si">⭐</div><h3>Hochzeits- & Festfrisuren</h3><p>Wir kreieren individuelle Braut- und Festfrisuren für Ihren besonderen Tag. Mit Vorabsprache und Stilberatung bereiten wir Sie perfekt vor.</p></div><div class="sc"><div class="si">⭐</div><h3>Kinderhaare</h3><p>Einfühlsame und professionelle Haarschnitte speziell für Kinder in entspannter Atmosphäre. Wir machen den Besuch zum positiven Erlebnis für die Kleinsten.</p></div></div>
+</div></section>
+<section id="reviews"><div class="si-n">
+<h2 class="st">Das sagen unsere Kunden</h2>
+<p class="ss">Bewertungen von Google</p>
+<div class="ro">
+<div class="rn">4.8</div>
+<div class="rs-o">★★★★★</div>
+<div class="rcnt">Basierend auf 47 Google-Bewertungen</div>
+</div>
+<div class="rg"><div class="rc"><div class="rs">★★★★★</div><p class="rt">"Bester Friseur in Linden!"</p><div class="ra">Maria S.</div></div><div class="rc"><div class="rs">★★★★★</div><p class="rt">"Tolle Atmosphäre, perfekte Balayage."</p><div class="ra">Sandra L.</div></div><div class="rc"><div class="rs">★★★★☆</div><p class="rt">"Guter Haarschnitt, faire Preise."</p><div class="ra">Thomas K.</div></div></div>
+</div></section>
+<section id="contact" class="sbg"><div class="si-n">
+<h2 class="st">Kontakt aufnehmen</h2>
+<p class="ss">Nehmen Sie Kontakt auf — telefonisch oder per Formular</p>
+<div class="cg">
+<div class="ci">
+<h3>So erreichen Sie uns</h3>
+<div class="cit"><span>📍</span><span>Limmerstraße 45, 30451 Hannover</span></div>
+<div class="cit"><span>📞</span><a href="tel:+495111234567">0511 1234567</a></div>
+<div class="cit"><span>✉️</span><a href="mailto:info@salon-schmitt.de">info@salon-schmitt.de</a></div>
+<h3 style="margin-top:24px">Öffnungszeiten</h3>
+<table class="ht"><tr><td>Mo</td><td>geschlossen</td></tr><tr><td>Di-Fr</td><td>9:00-18:00</td></tr><tr><td>Sa</td><td>9:00-14:00</td></tr></table>
+</div>
+<div>
+<h3 style="font-size:1.1rem;font-weight:600;color:#1F2937;margin-bottom:16px">Nachricht senden</h3>
+<form class="cf" onsubmit="event.preventDefault();alert('Dies ist eine Demo-Website. Das Formular ist nicht aktiv.');">
+<input type="text" placeholder="Ihr Name" required>
+<input type="email" placeholder="Ihre E-Mail-Adresse" required>
+<input type="tel" placeholder="Ihre Telefonnummer (optional)">
+<textarea placeholder="Ihre Nachricht"></textarea>
+<button type="submit" class="btn bp">Nachricht absenden</button>
+</form>
+</div>
+</div>
+<div class="mc"><iframe src="https://maps.google.com/?cid=123456" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div></section>
+<footer><div class="fi">
+<div class="fl"><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#contact">Kontakt</a></div>
+<div class="fc">© 2026 Salon Schmitt — Alle Rechte vorbehalten</div>
+<div class="fr">Diese Website wurde als kostenlose Vorschau erstellt von <a href="https://revuo.net" target="_blank">REVUO</a> — Professionelle Websites für lokale Unternehmen.</div>
+</div></footer>
+</body>
+</html>
